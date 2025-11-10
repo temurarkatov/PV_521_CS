@@ -25,6 +25,16 @@ namespace AbstractGeometry
 
 			Rectangle rectangle = new Rectangle(100, 40, 300, 50, 3, Color.AliceBlue);
 			rectangle.Info(e);
+			Square square = new Square(50, 500, 50, 5, Color.Red);
+			square.Info(e);
+
+			Circle circle = new Circle(100, 600, 50, 5, Color.Yellow);
+			circle.Info(e);
+
+			IsoscailesTriangle iso=new IsoscailesTriangle(75, 150, 500, 200, 3, Color.Green);
+			iso.Info(e);
+			EquilletiarelTriangl equ = new EquilletiarelTriangl(50, 700, 200, 4, Color.Green);
+			equ.Info(e);
 		}
 		[DllImport("kernel32.dll")]
 		public static extern IntPtr GetConsoleWindow();
